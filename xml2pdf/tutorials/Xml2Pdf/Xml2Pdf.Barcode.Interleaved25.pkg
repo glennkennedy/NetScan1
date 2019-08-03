@@ -1,0 +1,20 @@
+<refentry id="{@id}">
+ 
+  <refnamediv>
+    <refname>Interleaved 25 barcode</refname>
+    <refpurpose></refpurpose>
+  </refnamediv>
+ 
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>Guillaume Luchet, guillaume@geelweb.org</author>
+      <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+      <license>BSD License</license>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ 
+  <refsect1 id="{@id circle}">
+    <title>Interleaved 25 barcode plugin</title>
+    <para>Draw an Interleaved 25 barcode.</para>
+  </refsect1>
+</refentry>

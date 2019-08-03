@@ -1,0 +1,35 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag body</refname>
+  <refpurpose>How to use the tag body</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id body}">
+  <title>Tag body</title>
+  <para>The tag body is used to define the PDF formats.</para>
+  <para>
+   Example :
+   {@example body.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>format : page format [A3|A4|A5|letter|legal]</para></listitem>
+    <listitem><para>unit : mesure unit [pt|mm|cm|in]</para></listitem>
+    <listitem><para>marginleft : left margin [float]</para></listitem>
+    <listitem><para>marginright : right margin [float]</para></listitem>
+    <listitem><para>margintop : top margin [float]</para></listitem>
+    <listitem><para>marginbottom : bottom margin [float]</para></listitem>
+    <listitem><para>margins : overwrite the left, right, top and bottom margins</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

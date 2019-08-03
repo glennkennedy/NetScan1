@@ -1,0 +1,31 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag value</refname>
+  <refpurpose>How to use the tag value ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id value}">
+  <title>Tag value</title>
+  <para>The tag value is used to add a graph value.</para>
+  <para>
+   Example :
+   {@example value.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>legend : value name [string]</para></listitem>
+    <listitem><para>data : value [float]</para></listitem>
+    <listitem><para>color : value color [string]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

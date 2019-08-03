@@ -1,0 +1,30 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag point</refname>
+  <refpurpose>How to use the tag point ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id point}">
+  <title>Tag point</title>
+  <para>The tag point is used to add a point to a graph line.</para>
+  <para>
+   Example :
+   {@example line.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>x : abscisce [string]</para></listitem>
+    <listitem><para>y : ordinate [float]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

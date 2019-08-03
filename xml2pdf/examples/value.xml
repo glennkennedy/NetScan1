@@ -1,0 +1,8 @@
+<!-- Draw a circle graph whith five portions -->
+<graph type='circle' width='100' height='80' mode='3D' legend='%l (%p)' fontsize='10'>
+    <value legend='Lille' data='1510' color='#f0f5ff'/>
+    <value legend='Paris' data='1610' color='#feefc1'/>
+    <value legend='Toulouse' data='1400' color='#ffaaaa'/>
+    <value legend='Lyon' data='700'/>
+    <value legend='Bordeaux' data='1001'/>
+</graph>

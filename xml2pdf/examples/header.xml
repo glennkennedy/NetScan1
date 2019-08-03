@@ -1,0 +1,8 @@
+<header>
+    <date align="C" />
+    <image file="logo_clair.png" top="10" left="0" />
+    <paragraph width="50" top="20" left="10" 
+      position="absolute" border="1">first header paragraph</paragraph>
+    <paragraph width="50" top="20" left="150" 
+      position="absolute" border="1">second header paragraph</paragraph>
+</header>

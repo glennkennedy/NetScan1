@@ -1,0 +1,43 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag header</refname>
+  <refpurpose>How to use the tag header ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id header}">
+  <title>Tag header</title>
+  <para>The tag header is used define document header.</para>
+  <para>
+   Example :
+   {@example header.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>font : header font [string]</para></listitem>
+    <listitem><para>fontsize : header font size [integre]</para></listitem>
+    <listitem><para>fontcolor : header font color [string]</para></listitem>
+    <listitem><para>fontstyle : header font style [B[U[I]]]</para></listitem>
+    <listitem><para>lineheight : header text line height</para></listitem>
+    <listitem><para>border : draw elementsborders [boolean]</para></listitem>
+    <listitem><para>bordercolor : elements borders color [string]</para></listitem>
+    <listitem><para>fill : fill elements backgrounds [boolean]</para></listitem>
+    <listitem><para>fillcolor : elements fill color [string]</para></listitem>
+    <listitem><para>textalign : elements text alignment [L|R|C|J]</para></listitem>
+    <listitem><para>align : elements alignment [L|R|C]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>start : start page [integer]</para></listitem>
+    <listitem><para>end : end page [integer]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

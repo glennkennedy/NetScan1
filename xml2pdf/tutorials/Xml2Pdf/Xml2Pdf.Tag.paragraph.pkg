@@ -1,0 +1,43 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag paragraph</refname>
+  <refpurpose>How to use the tag paragraph</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id paragraph}">
+  <title>Tag paragraph</title>
+  <para>The tag paragraph is used to add text with displaying options (likke borders, fill)</para>
+  <para>
+   Example :
+   {@example paragraph.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>font : paragraph font [string]</para></listitem>
+    <listitem><para>fontsize : paragraph font size [integre]</para></listitem>
+    <listitem><para>fontcolor : paragraph font color [string]</para></listitem>
+    <listitem><para>fontstyle : paragraph font style [B[U[I]]]</para></listitem>
+    <listitem><para>lineheight : paragraph text line height</para></listitem>
+    <listitem><para>border : draw paragraphs borders [boolean]</para></listitem>
+    <listitem><para>bordercolor : paragraph borders color [string]</para></listitem>
+    <listitem><para>fill : fill paragraph background [boolean]</para></listitem>
+    <listitem><para>fillcolor : paragraph fill color [string]</para></listitem>
+    <listitem><para>width : paragraph width [float]</para></listitem>
+    <listitem><para>textalign : paragraph text alignment [L|R|C|J]</para></listitem>
+    <listitem><para>align : paragraph alignment [L|R|C]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>position : paragraph positioning mode [relative|absolute]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

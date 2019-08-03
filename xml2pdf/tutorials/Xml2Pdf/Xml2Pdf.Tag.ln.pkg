@@ -1,0 +1,29 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag ln</refname>
+  <refpurpose>How to use the tag ln ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id ln}">
+  <title>Tag ln</title>
+  <para>The tag ln add a line break.</para>
+  <para>
+   Example :
+   {@example ln.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>lineheight : line break height [float]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

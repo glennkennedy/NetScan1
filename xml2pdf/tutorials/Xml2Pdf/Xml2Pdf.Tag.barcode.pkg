@@ -1,0 +1,40 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag barcode</refname>
+  <refpurpose>How to use barcode tag</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id barcode}">
+  <title>Tag barcode</title>
+  <para>barcode tag is used to add bar code in a pdf document. You can add two type of barcode :
+   <itemizedlist>
+    <listitem><para>EAN13 (13 digits)</para></listitem>
+    <listitem><para>UPC-A (12 digits + check digit)</para></listitem>
+   </itemizedlist>
+  </para>
+  <para>
+   Example :
+   {@example barcode.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>norm : the barcode norm [EAN13|UPC-A]</para></listitem>
+    <listitem><para>barcode : the barcode [integer]</para></listitem>
+    <listitem><para>x : x position [float]</para></listitem>
+    <listitem><para>y : y position [float]</para></listitem>
+    <listitem><para>width : bar width [float]</para></listitem>
+    <listitem><para>height : barcode height [float]</para></listitem>
+    <listitem><para>position : positionning mode [relative|absolute]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

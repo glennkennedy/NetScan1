@@ -1,0 +1,20 @@
+<refentry id="{@id}">
+ 
+  <refnamediv>
+    <refname>circle graph</refname>
+    <refpurpose></refpurpose>
+  </refnamediv>
+ 
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>Guillaume Luchet, guillaume@geelweb.org</author>
+      <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+      <license>BSD License</license>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ 
+  <refsect1 id="{@id circle}">
+    <title>Circle graph plugin</title>
+    <para>Draw a circular graph.</para>
+  </refsect1>
+</refentry>

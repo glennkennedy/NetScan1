@@ -1,0 +1,32 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag page</refname>
+  <refpurpose>How to use the tag page ? </refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id page}">
+  <title>Tag page</title>
+  <para>The tag page is used to add page in the document.</para>
+  <para>
+   Example :
+   {@example page.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>font : page font [string]</para></listitem>
+    <listitem><para>fontsize : page font size [integre]</para></listitem>
+    <listitem><para>fontcolor : page font color [string]</para></listitem>
+    <listitem><para>fontstyle : page font style [B[U[I]]]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

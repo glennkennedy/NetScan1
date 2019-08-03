@@ -1,0 +1,36 @@
+<refentry id="{@id}">
+ <refnamediv>
+  <refname>Barcode types</refname>
+  <refpurpose></refpurpose>
+ </refnamediv>
+ {@toc}
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ <refsect1 id="{@id manual}">
+  <title>Barcode manual</title>
+  <refsect2 id="{@id create}">
+   <title>Create a barcode plugin</title>
+   <para>The type of barcode are plugin defined, you can add new type of barcode
+   adding a plugin file in the plugins barcodes directory. To a barcode type
+   named custom, you must create a file named <b>xml2pdf.barcode.custom.php</b>
+   with a class named <b>xml2pdf_barcode_custom</b>.</para>
+  </refsect2>
+  <refsect2 id="{@id define}">
+   <title>Existing barcode type</title>
+   <para>The existing barcode plugins are :
+   <itemizedlist>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.Code39.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.Code39Extend.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.EAN13.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.Interleaved25.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.Postnet.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Barcode.UPC_A.pkg}</para></listitem>
+   </itemizedlist>
+  </para>
+  </refsect2>
+ </refsect1>
+</refentry>

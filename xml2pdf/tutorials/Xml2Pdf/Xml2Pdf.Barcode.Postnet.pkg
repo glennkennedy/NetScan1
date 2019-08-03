@@ -1,0 +1,20 @@
+<refentry id="{@id}">
+ 
+  <refnamediv>
+    <refname>Postnet barcode</refname>
+    <refpurpose></refpurpose>
+  </refnamediv>
+ 
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>Guillaume Luchet, guillaume@geelweb.org</author>
+      <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+      <license>BSD License</license>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ 
+  <refsect1 id="{@id circle}">
+    <title>Postnet barcode plugin</title>
+    <para>Draw a Postnet barcode.</para>
+  </refsect1>
+</refentry>

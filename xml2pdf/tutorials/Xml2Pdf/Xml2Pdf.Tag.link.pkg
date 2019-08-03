@@ -1,0 +1,33 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag link</refname>
+  <refpurpose>How to use the tag link ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id link}">
+  <title>Tag link</title>
+  <para>The tag link is used to add internal or external link into the document.</para>
+  <para>
+   Example :
+   {@example link.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>ref : element id to internal link [string]</para></listitem>
+    <listitem><para>url : url to external link [string]</para></listitem>
+    <listitem><para>name : display name [string]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

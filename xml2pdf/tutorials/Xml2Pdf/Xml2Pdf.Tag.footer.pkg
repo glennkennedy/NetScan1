@@ -1,0 +1,43 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag footer</refname>
+  <refpurpose>How to use the tag footer ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id footer}">
+  <title>Tag footer</title>
+  <para>The tag footer is used define document footer.</para>
+  <para>
+   Example :
+   {@example footer.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>font : footer font [string]</para></listitem>
+    <listitem><para>fontsize : footer font size [integre]</para></listitem>
+    <listitem><para>fontcolor : footer font color [string]</para></listitem>
+    <listitem><para>fontstyle : footer font style [B[U[I]]]</para></listitem>
+    <listitem><para>lineheight : footer text line height</para></listitem>
+    <listitem><para>border : draw elementsborders [boolean]</para></listitem>
+    <listitem><para>bordercolor : elements borders color [string]</para></listitem>
+    <listitem><para>fill : fill elements backgrounds [boolean]</para></listitem>
+    <listitem><para>fillcolor : elements fill color [string]</para></listitem>
+    <listitem><para>textalign : elements text alignment [L|R|C|J]</para></listitem>
+    <listitem><para>align : elements alignment [L|R|C]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>start : start page [integer]</para></listitem>
+    <listitem><para>end : end page [integer]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

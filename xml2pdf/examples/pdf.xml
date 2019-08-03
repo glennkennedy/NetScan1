@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<pdf creator="xml2pdf" subject="Pdf construction" title="Example">
+  <body format='A4' unit='mm' margins='10'>
+    <header/>
+    
+    <page fontsize='14' >
+      <!-- page content -->
+    </page>
+  </body>
+</pdf>

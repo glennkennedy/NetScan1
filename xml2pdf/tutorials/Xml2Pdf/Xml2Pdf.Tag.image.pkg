@@ -1,0 +1,34 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag image</refname>
+  <refpurpose>How to use the tag image ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id image}">
+  <title>Tag image</title>
+  <para>The tag image is used to add image in document. This tag can be used on page, header or footer</para>
+  <para>
+   Example :
+   {@example image.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>file : image file [string]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>position : positionning mode [relative|absolute]</para></listitem>
+    <listitem><para>width : image width [float]</para></listitem>
+    <listitem><para>height : image height [float]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

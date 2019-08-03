@@ -1,0 +1,19 @@
+<!-- draw a lines graph -->
+<graph type='line' width='120' height='50' left='60' top='220' position='absolute' color='#0197cb' legend='' repere='10'>
+    <line legend='first_curve'>
+        <point x='0' y='10'/>
+        <point x='5' y='15'/>
+        <point x='10' y='22'/>
+        <point x='15' y='1'/>
+        <point x='20' y='12'/>
+        <point x='25' y='15'/>
+    </line>
+    <line legend='second_curve' color='#0197cb'>
+        <point x='0' y='17'/>
+        <point x='8' y='15'/>
+        <point x='12' y='5'/>
+        <point x='15' y='6'/>
+        <point x='20' y='12'/>
+        <point x='25' y='8'/>
+    </line>
+</graph>

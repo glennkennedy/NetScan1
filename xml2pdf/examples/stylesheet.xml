@@ -1,0 +1,3 @@
+<stylesheet file="/home/guil/dev/src/php/xml2pdf/styleSheets/style.txt" />
+
+<text fontcolor='#808080' textalign='j'>normal text <b>bold text!</b> <u>underline text!</u> <i>italic text</i> <b><u><i>all in same time!</i></u></b> <br/><red>red text on new line</red></text>

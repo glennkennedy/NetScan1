@@ -1,0 +1,31 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag pdf</refname>
+  <refpurpose>How to use the tag pdf ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id text}">
+  <title>Tag pdf</title>
+  <para>The tag pdf is the container of all the document. Its properties are display in the document header if the header don't have child elements.</para>
+  <para>
+   Example :
+   {@example pdf.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>creator : document creator [string]</para></listitem>
+    <listitem><para>subject : document subject [string]</para></listitem>
+    <listitem><para>title : document title [string]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

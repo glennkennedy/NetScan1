@@ -1,0 +1,45 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag graph</refname>
+  <refpurpose>How to use the tag graph ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id graph}">
+  <title>Tag graph</title>
+  <para>The tag graph is used to add a graph to a PDF document. See the {@tutorial Xml2Pdf.Graph.pkg graph type manual} to know how to define graph type.</para>
+  <para>
+   Example :
+   {@example value.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>type : graph plugin type name [string]</para></listitem>
+    <listitem><para>width : graph width [float]</para></listitem>
+    <listitem><para>height : graph height [float]</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>position : positionning mode [absolute|relative]</para></listitem>
+    <listitem><para>mode : visual effect [2D|3D]</para></listitem>
+    <listitem><para>legend : legend format [string]
+        <itemizedlist>
+          <listitem><para>%l : name</para></listitem>
+          <listitem><para>%v : value</para></listitem>
+          <listitem><para>%p : percent</para></listitem>
+        </itemizedlist></para></listitem>
+    <listitem><para>color : graph color [string]</para></listitem>
+    <listitem><para>max : max scale value [integer]</para></listitem>
+    <listitem><para>repere : number of values for the scale</para></listitem>
+    <listitem><para>fontsize : scale font size</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

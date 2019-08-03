@@ -1,0 +1,30 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag line</refname>
+  <refpurpose>How to use the tag line ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id line}">
+  <title>Tag line</title>
+  <para>The tag line is used to add a line in a graph of type line.</para>
+  <para>
+   Example :
+   {@example line.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>legend : curve name [string]</para></listitem>
+    <listitem><para>color : curve color [float]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>

@@ -1,0 +1,89 @@
+<refentry id="{@id}">
+  <refnamediv>
+    <refname>Xml2Pdf documentation</refname>
+    <refpurpose></refpurpose>
+  </refnamediv>
+  
+  {@toc}
+ 
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>Guillaume Luchet, guillaume@geelweb.org</author>
+      <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+      <license>BSD License</license>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ 
+  <refsect1 id="{@id manual}">
+    <title>Xml2Pdf documentation</title>
+    <para>Xml2Pdf is a library to convert XML file to PDF document. The XML 
+    content is parsed using the PHP XML parser functions, then the PDF is build 
+    using {@link http://www.fpdf.org FPDF}.</para>
+    <refsect2 id="{@id license}">
+      <title>BSD License</title>
+      <para>Redistribution and use in source and binary forms, with or without 
+      modification, are permitted provided that the following conditions are 
+      met:</para>
+      <para>    * Redistributions of source code must retain the above copyright 
+      notice, this list of conditions and the following disclaimer.</para>
+      <para>    * Redistributions in binary form must reproduce the above 
+      copyright notice, this list of conditions and the following disclaimer in 
+      the documentation and/or other materials provided with the distribution.
+      </para>
+      <para>    * Neither the name of the Xml2Pdf nor the names of its 
+      contributors may be used to endorse or promote products derived from this 
+      software without specific prior written permission.</para>
+      <para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+      "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED 
+      TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+      PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+      CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+      EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+      PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+      PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+      LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+      NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+      SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para>
+    </refsect2>
+    <refsect2 id="{@id install}">
+      <title>Installation instructions</title>
+      <para>From source: download the tar.gz file to install from source code. 
+      Extract the content into a directory accessible by your web-server.</para>
+      <para>From dot deb package: debian users (or "debian like" like Ubuntu
+      users) can install it using a dot deb package (dpkg -i xml2pdf.deb</para>
+      <para>From PEAR package: I'll make a pear package comming soon.</para>
+      <refsect3 id="{@id webUsage}">
+        <title>Web usage instruction</title>
+        <para>Put the xml2pdf directory into a directory accessible by your 
+        web-server. That's all.</para>
+        <para>Now you can make pdf in your php script using : 
+          <programlisting role="php">
+            <![CDATA[
+include('Xml2Pdf.php');
+$obj = new Xml2Pdf('myXmlFile.xml');
+$pdf = $obj->render();
+$pdf->Output();
+            ]]>
+          </programlisting>
+        </para>
+      </refsect3>
+      <refsect3 id="{@id commandLineUsage}">
+        <title>Command-line usage instruction</title>
+        <para>To use Xml2Pdf as a command-line interface, you need to install 
+        PHP version 5.1.0 or greater.</para>
+        <para>*IMPORTANT* any version of PHP below 5.1.0 will not work with 
+        version 0.6.10.8 of Xml2Pfd!!!</para>
+        <para><b>Windows:</b></para>
+        <para>You need the cli version of PHP (php-cli.exe or cli/php.exe in 
+        5.1.0+). Either run Xml2Pdf from the directory that PHP resides in, or 
+        put php.exe in your DOS PATH enviroment variable.</para>
+        <para>The simplest usage of Xml2Pdf is:
+C:\>php.exe "C:\Path\To\Xml2Pdf\xml2pdf" -F myFile.xml</para>
+        <para><b>Unix:</b></para>
+        <para>Make sure that the cgi/cli version of PHP is in your path.</para>
+        <para>The simplest usage of Xml2Pdf is:
+xml2pdf -f myFile.xml</para>
+      </refsect3>
+    </refsect2>     
+  </refsect1>
+</refentry>

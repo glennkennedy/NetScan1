@@ -1,0 +1,20 @@
+<refentry id="{@id}">
+ 
+  <refnamediv>
+    <refname>EAN 13 Extend barcode</refname>
+    <refpurpose></refpurpose>
+  </refnamediv>
+ 
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>Guillaume Luchet, guillaume@geelweb.org</author>
+      <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+      <license>BSD License</license>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ 
+  <refsect1 id="{@id circle}">
+    <title>EAN 13 Extend barcode plugin</title>
+    <para>Draw an EAN 13 Extend barcode.</para>
+  </refsect1>
+</refentry>

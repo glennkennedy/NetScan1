@@ -1,0 +1,31 @@
+<refentry id="{@id}">
+ <refnamediv>
+  <refname>Graph types</refname>
+  <refpurpose></refpurpose>
+ </refnamediv>
+ {@toc}
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ <refsect1 id="{@id manual}">
+  <title>Graph manual</title>
+  <refsect2 id="{@id create}">
+   <title>Create a graph type</title>
+   <para>The type of graph are plugin defined, you can add new style of graph adding a plugin file in the plugins graphs directory. To a graph type named custom, you must creat e a file named <b>xml2pdf.graph.circle.php</b> with a class named <b>xml2pdf_graph_circle</b>. An object {@link Xml2PdfTag_graph Xml2PdfTag_graph} will be passed to the constructor of the plugin class.</para>
+  </refsect2>
+  <refsect2 id="{@id define}">
+   <title>Existing graph type</title>
+   <para>The existing tags plugins are :
+   <itemizedlist>
+    <listitem><para>{@tutorial Xml2Pdf.Graph.circle.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Graph.line.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Graph.hbar.pkg}</para></listitem>
+    <listitem><para>{@tutorial Xml2Pdf.Graph.vbar.pkg}</para></listitem>
+   </itemizedlist>
+  </para>
+  </refsect2>
+ </refsect1>
+</refentry>

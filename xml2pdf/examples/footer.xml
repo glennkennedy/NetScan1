@@ -1,0 +1,5 @@
+<footer>
+  <numerotation align="right" />
+  <date align="left" />
+  <paragraph align="center">my document footer</paragraph>
+</footer>

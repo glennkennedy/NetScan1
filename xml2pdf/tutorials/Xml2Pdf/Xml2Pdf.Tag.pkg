@@ -1,0 +1,145 @@
+<refentry id="{@id}">
+ <refnamediv>
+  <refname>Tags Xml2Pdf</refname>
+  <refpurpose></refpurpose>
+ </refnamediv>
+ {@toc}
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ <refsect1 id="{@id manual}">
+  <title>Tags manual</title>
+  <refsect2 id="{@id create}">
+   <title>Create tags</title>
+   <para>The tags recognize by Xml2Pdf are define using plugins files. To create a new tag, you must just create a new plugin file and put it in the plugins tags directory who is defined in the config file Xml2Pdf.config.php</para>
+   <para>eg, to create a tag custom, you must create a file named <b>xml2pdf.tag.custom.php</b> with a class named <b>Xml2PdfTag_custom</b>.</para>
+   <para>The plugin class must have the following methods :
+     <itemizedlist>
+       <listitem><para>void __construtc(object Pdf, array) or void __construct(object Pdf, array, object Pdf)</para></listitem>
+       <listitem><para>void addContent(string)</para></listitem>
+       <listitem><para>void close()</para></listitem>
+     </itemizedlist>
+     If the constructor take three parameters, the third will be the parent tag of the curent tag.
+    </para>
+    <para>example :
+      <programlisting role="php">
+            <![CDATA[
+class Xml2PdfTag_custom {
+    /**
+     * parent tag
+     * @var object
+     */
+    public $parent;
+
+    /**
+     * object Pdf.
+     * @var object
+     */
+    public $pdf;
+
+    /**
+     * tag content
+     * @var string
+     */
+    public $content;
+
+    /**
+     * Constructor.
+     *
+     * call when the tag custom is open.
+     *
+     * @param object $pdf Object Pdf
+     * @param array $tagProperties tag properties
+     * @param object $parent tag parent
+     * @return void
+     */
+    public function __construct($pdf, $tagProperties, $parent) {
+        // here you can parse the tag properties
+    }
+
+    /**
+     * add the content
+     *
+     * @param string $content tag content
+     * @return void
+     */
+    public function addContent($content) {
+        // here you can manage the content
+    }
+
+    /**
+     * call when the tag is closed
+     *
+     * @return void
+     */
+    public function close() {
+        // here you can maange the actions to do when the tag is closed
+    }
+}
+            ]]>
+          </programlisting>
+    </para>
+    <para> To the following XML : 
+    <programlisting role="xml">
+            <![CDATA[
+<parent foo="foovalue">
+  <custom bar="barvalue">custom tag content.</custom>
+</parent>
+            ]]>
+    </programlisting>
+    The PHP code will be :
+    <programlisting role="php">
+            <![CDATA[
+// <parent foo="foovalue">
+require_once('xml2pdf.tag_parent.php');
+$parentTag = new Xml2PdfTag_parent($pdfObject, array('FOO'=>'foovalue'));
+
+// <custom bar="barvalue">
+require_once('xml2pdf.tag_custom.php');
+$customTag = new Xml2PdfTag_custom($pdfObject, array('BAR'=>'barvalue'), $parentTag);
+
+// custom tag content.
+$customTag->addContent('custom tag content.');
+
+// </custom>
+$customTag->close();
+
+// </parent>
+$parentTag->close();
+            ]]>
+    </programlisting>
+    </para>
+  </refsect2>
+  <refsect2 id="{@id define}">
+   <title>Existing tags</title>
+   <para>The existing tags plugins are :
+   <itemizedlist>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.pdf.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.body.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.page.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.header.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.footer.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.text.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.paragraph.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.date.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.numerotation.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.image.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.barcode.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.link.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.ln.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.stylesheet.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.literal.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.table.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.graph.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.value.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.line.pkg}</para></listitem>
+     <listitem><para>{@tutorial Xml2Pdf.Tag.point.pkg}</para></listitem>
+   </itemizedlist>
+  </para>
+  </refsect2>
+ </refsect1>
+</refentry>

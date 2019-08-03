@@ -1,0 +1,33 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag stylesheet</refname>
+  <refpurpose>How to use the tag stylesheet ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id stylesheet}">
+  <title>Tag stylesheet</title>
+  <para>The tag stylesheet is used to define styles.
+  </para>
+  <para>
+   Example :
+   {@example stylesheet.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>file : style sheet file name [string]</para></listitem>
+   </itemizedlist>
+  </para>
+  <para>style sheet example:
+  {@example styles.txt}
+  </para>
+ </refsect1>
+</refentry>

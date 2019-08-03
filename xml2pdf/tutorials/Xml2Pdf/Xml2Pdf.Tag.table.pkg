@@ -1,0 +1,43 @@
+<refentry id="{@id}">
+ 
+ <refnamediv>
+  <refname>Tag table, tt, th, tr, td</refname>
+  <refpurpose>How to use the tag table ?</refpurpose>
+ </refnamediv>
+ 
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>Guillaume Luchet, guillaume@geelweb.org</author>
+   <copyright>Copyright © 2006, Guillaume Luchet</copyright>
+   <license>BSD License</license>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ 
+ <refsect1 id="{@id table}">
+  <title>Tag table</title>
+  <para>The tags table, tt, th, tr and td are used to add table into the document.</para>
+  <para>
+   Example :
+   {@example table.xml}
+  </para>
+  <para>the tag attributes are:
+   <itemizedlist>
+    <listitem><para>font : font [string]</para></listitem>
+    <listitem><para>fontsize : font size [integre]</para></listitem>
+    <listitem><para>fontcolor : font color [string]</para></listitem>
+    <listitem><para>fontstyle : font style [B[U[I]]]</para></listitem>
+    <listitem><para>lineheight : text line height</para></listitem>
+    <listitem><para>border : draw borders [boolean]</para></listitem>
+    <listitem><para>bordercolor : borders color [string]</para></listitem>
+    <listitem><para>fill : fill background [boolean]</para></listitem>
+    <listitem><para>fillcolor : fill color [string]</para></listitem>
+    <listitem><para>width : width [float]</para></listitem>
+    <listitem><para>textalign : text alignment [L|R|C|J]</para></listitem>
+    <listitem><para>align : alignment [L|R|C] (just for tag table)</para></listitem>
+    <listitem><para>left : left margin [float]</para></listitem>
+    <listitem><para>top : top margin [float]</para></listitem>
+    <listitem><para>position : positioning mode [relative|absolute]</para></listitem>
+   </itemizedlist>
+  </para>
+ </refsect1>
+</refentry>
