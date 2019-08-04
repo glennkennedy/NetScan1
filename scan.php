@@ -9,7 +9,8 @@ require __DIR__ . '/vendor/autoload.php';
 use Nmap\Nmap;
 use Nmap\getOpenPorts;
 #use Nmap\Net_Nmap;
-if(isset($_POST['url']))
+
+if(isset($_POST['url']) && isset($_POST['commonPorts'])|| isset($_POST['port1']) && isset($_POST['port2']) && isset($_POST['port3']) && isset($_POST['port4']) && isset($_POST['port5']))
 {
   $userName = $_SESSION['username'];
   //creating a simple uuid for the file names
@@ -17,11 +18,25 @@ if(isset($_POST['url']))
   $time = time();
   $sessionTime = $sessionID.$time;
   $nmap = new Nmap("files/".$sessionTime.".xml");
+  $commonPorts = $_POST['commonPorts'];
+  $url =$_POST['url'];
+  if($commonPorts == 1){
+    $inputPort1 = "21";
+    $inputPort2 = "22";
+    $inputPort3 = "80";
+    $inputPort4 = "23";
+    $inputPort5 = "55";
 
 
+  }elseif( isset($_POST['port1']) && isset($_POST['port2']) && isset($_POST['port3']) && isset($_POST['port4']) && isset($_POST['port5'])){
+    $inputPort1 = $_POST['port1'];
+    $inputPort2 = $_POST['port2'];
+    $inputPort3 = $_POST['port3'];
+    $inputPort4 = $_POST['port4'];
+    $inputPort5 = $_POST['port5'];
+  }
 
-
-  $nmap->scan(['google.com'], [ 21, 22,30,69,80 ]);
+  $nmap->scan([$url], [$inputPort1,$inputPort2,$inputPort3,$inputPort4,$inputPort5]);
 
   #$pdf->Output();
   #$obj = new Xml2Pdf("files/".$sessionTime.".xml");
@@ -63,9 +78,28 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "0 results";
 }
-sleep(2);
-echo exec("sudo sh files/script.sh $sessionTime");
+//cms detection query
+$urlCMS = "https://whatcms.org/APIEndpoint/Detect?key=2606ca06f82ce02ef7df90c80f7e7ba4fc2718189726c75cdf13b61eac5157dcd9e732&url=$url";
 
+$data = file_get_contents($urlCMS); // put the contents of the file into a variable
+$characters = json_decode($data); // decode the JSON feed
+$cmsType =  $characters->result->name;
+$cmsConfidence =  $characters->result->confidence;
+$cmsVersion = $characters->result->version;
+
+//$urlLanguge = "https://whatcms.org/APIEndpoint/Technology?key=2606ca06f82ce02ef7df90c80f7e7ba4fc2718189726c75cdf13b61eac5157dcd9e732&url=evergreenireland.net";
+
+//$dataLang = file_get_contents($urlLanguge);
+  // $categories1 = json_decode($dataLang);
+  // echo $categories1->results[1]->name;
+
+
+
+sleep(1);
+//passing 4 vars
+$space = " ";
+echo exec("sudo sh files/script.sh $sessionTime $space $cmsType $space $cmsConfidence $space $cmsVersion");
+//echo exec("sudo sh files/script.sh $sessionTime");
 
 
 
@@ -76,6 +110,6 @@ echo exec("sudo sh files/script.sh $sessionTime");
 
 
 else {
-  echo "null";
+  echo "please go back and chose 5 ports to scan or use the common ports features";
 }
 #246 added code

@@ -23,12 +23,31 @@
 <form action="/scan.php" method="post">
               <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input name = "url" type="text" class="form-control form-control-lg" placeholder="Enter your email...">
+                <input name = "url" type="text" class="form-control form-control-lg" placeholder="Enter your website you want to scan">
+
               </div>
               <div class="col-12 col-md-3">
                 <button type="submit" class="btn btn-block btn-lg btn-primary">search</button>
+
+
+              </div>
+              <div class="col-md-4 col-md-4 col-md-4">
+              <div class="checkbox">
+                <label><input type="checkbox" name = "commonPorts" value="1">scan most common ports</label>
               </div>
             </div>
+            <br>
+              <div class="col-12 col-md-3">
+              <label for="sel1">Or chose your own(Can only scan 5 ports at a time)</label>
+              <input name = "port1" type="number" class="form-control form-control-lg" placeholder="" min="0" max="65535">
+              <input name = "port2" type="number" class="form-control form-control-lg" placeholder="" min="0" max="65535">
+              <input name = "port3" type="number" class="form-control form-control-lg" placeholder="" min="0" max="65535">
+              <input name = "port4" type="number" class="form-control form-control-lg" placeholder="" min="0" max="65535">
+              <input name = "port5" type="number" class="form-control form-control-lg" placeholder="" min="0" max="65535">
+
+              </div>
+            </div>
+
           </form>
         </div>
       </div>
