@@ -7,13 +7,15 @@ class NewUserForm extends DbConn
 
             $db = new DbConn;
             $tbl_members = $db->tbl_members;
+            $generatedReportsVal = "null.xml";
             // prepare sql and bind parameters
-            $stmt = $db->conn->prepare("INSERT INTO ".$tbl_members." (id, username, password, email)
-            VALUES (:id, :username, :password, :email)");
+            $stmt = $db->conn->prepare("INSERT INTO ".$tbl_members." (id, username, password, email,generatedReports)
+            VALUES (:id, :username, :password, :email, :generatedReports)");
             $stmt->bindParam(':id', $uid);
             $stmt->bindParam(':username', $usr);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':password', $pw);
+              $stmt->bindParam(':generatedReports', $generatedReportsVal);
             $stmt->execute();
 
             $err = '';

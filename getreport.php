@@ -28,7 +28,7 @@ $xml=simplexml_load_file("files/$sessionTime.xml") or die("Error: Cannot create 
 
 <nav class="navbar navbar-light bg-light static-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <a class="navbar-brand" href="#">Netscan</a>
     <a class="btn btn-primary" href="login/logout.php">Logout</a>
   </div>
 </nav>
@@ -44,12 +44,7 @@ $xml=simplexml_load_file("files/$sessionTime.xml") or die("Error: Cannot create 
        <a class="nav-link disabled" href="#">Disabled</a>
      </li>
      <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-       <div class="dropdown-menu" aria-labelledby="dropdown01">
-         <a class="dropdown-item" href="#">Action</a>
-         <a class="dropdown-item" href="#">Another action</a>
-         <a class="dropdown-item" href="#">Something else here</a>
-       </div>
+
      </li>
    </ul>
    <form class="form-inline my-2 my-lg-0">
@@ -65,7 +60,6 @@ $xml=simplexml_load_file("files/$sessionTime.xml") or die("Error: Cannot create 
 
    <div class="col-12 col-md-9">
      <p class="float-right hidden-md-up">
-       <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
      </p>
      <div class="jumbotron">
        <h1>Your scan has been completed</h1>

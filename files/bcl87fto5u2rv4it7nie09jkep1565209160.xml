@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Wed Aug  7 20:19:20 2019 as: nmap -p 35,11,19,8,30 -oX files/bcl87fto5u2rv4it7nie09jkep1565209160.xml wordpress.com -->
+<nmaprun scanner="nmap" args="nmap -p 35,11,19,8,30 -oX files/bcl87fto5u2rv4it7nie09jkep1565209160.xml wordpress.com" start="1565209160" startstr="Wed Aug  7 20:19:20 2019" version="6.40" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="8,11,19,30,35"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1565209161" endtime="1565209162"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.0.78.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wordpress.com" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="8"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="11"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="systat" method="table" conf="3"/></port>
+<port protocol="tcp" portid="19"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="chargen" method="table" conf="3"/></port>
+<port protocol="tcp" portid="30"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="priv-print" method="table" conf="3"/></port>
+</ports>
+<times srtt="11985" rttvar="9036" to="100000"/>
+<CMS>WordPress confidence: high version: 5.2.2</CMS></host>
+<runstats><finished time="1565209162" timestr="Wed Aug  7 20:19:22 2019" elapsed="1.28" summary="Nmap done at Wed Aug  7 20:19:22 2019; 1 IP address (1 host up) scanned in 1.28 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

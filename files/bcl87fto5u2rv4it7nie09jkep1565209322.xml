@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Wed Aug  7 20:22:02 2019 as: nmap -p 80,443,21,53,110 -oX files/bcl87fto5u2rv4it7nie09jkep1565209322.xml news.sap.com -->
+<nmaprun scanner="nmap" args="nmap -p 80,443,21,53,110 -oX files/bcl87fto5u2rv4it7nie09jkep1565209322.xml news.sap.com" start="1565209322" startstr="Wed Aug  7 20:22:02 2019" version="6.40" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="21,53,80,110,443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1565209322" endtime="1565209323"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.196.198.100" addrtype="ipv4"/>
+<hostnames>
+<hostname name="news.sap.com" type="user"/>
+<hostname name="ec2-18-196-198-100.eu-central-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="22267" rttvar="10092" to="100000"/>
+<CMS>WordPress confidence: high version: 5.2.1</CMS></host>
+<runstats><finished time="1565209323" timestr="Wed Aug  7 20:22:03 2019" elapsed="1.38" summary="Nmap done at Wed Aug  7 20:22:03 2019; 1 IP address (1 host up) scanned in 1.38 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
