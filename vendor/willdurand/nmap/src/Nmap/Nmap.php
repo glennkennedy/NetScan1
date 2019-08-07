@@ -245,11 +245,11 @@ class Nmap
             #}
         }
         #added custom code to this libary
-        echo $port->attributes()->portid;
-        echo $port->service->attributes()->name;
-        echo $port->attributes()->state;
-        echo $port->service->attributes()->version;
-        echo $port->service->attributes()->product;
+      //  echo $port->attributes()->portid;
+    //    echo $port->service->attributes()->name;
+    //    echo $port->attributes()->state;
+    //    echo $port->service->attributes()->version;
+    //    echo $port->service->attributes()->product;
 
 
 

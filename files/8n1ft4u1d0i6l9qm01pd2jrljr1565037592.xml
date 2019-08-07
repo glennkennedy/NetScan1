@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Mon Aug  5 20:39:52 2019 as: nmap -p 21,22,80,23,55 -oX files/8n1ft4u1d0i6l9qm01pd2jrljr1565037592.xml Wordpress.com -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,80,23,55 -oX files/8n1ft4u1d0i6l9qm01pd2jrljr1565037592.xml Wordpress.com" start="1565037592" startstr="Mon Aug  5 20:39:52 2019" version="6.40" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="21-23,55,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1565037592" endtime="1565037593"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.0.78.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Wordpress.com" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="isi-gl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="11964" rttvar="6819" to="100000"/>
+<CMS>WordPress confidence: high version: 5.2.2</CMS></host>
+<runstats><finished time="1565037593" timestr="Mon Aug  5 20:39:53 2019" elapsed="1.24" summary="Nmap done at Mon Aug  5 20:39:53 2019; 1 IP address (1 host up) scanned in 1.24 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

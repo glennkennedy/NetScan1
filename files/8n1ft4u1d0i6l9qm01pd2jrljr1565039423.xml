@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Mon Aug  5 21:10:23 2019 as: nmap -p 21,22,80,23,55 -oX files/8n1ft4u1d0i6l9qm01pd2jrljr1565039423.xml &lt;script&gt;alert(&apos;hello&apos;);&lt;/script&gt; -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,80,23,55 -oX files/8n1ft4u1d0i6l9qm01pd2jrljr1565039423.xml &lt;script&gt;alert('hello');&lt;/script&gt;" start="1565039423" startstr="Mon Aug  5 21:10:23 2019" version="6.40" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="21-23,55,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<target specification="&lt;script&gt;alert('hello');&lt;/script&gt;" status="skipped" reason="invalid"/>
+<runstats><finished time="1565039423" timestr="Mon Aug  5 21:10:23 2019" elapsed="0.03" summary="Nmap done at Mon Aug  5 21:10:23 2019; 0 IP addresses (0 hosts up) scanned in 0.03 seconds" exit="success"/><hosts up="0" down="0" total="0"/>
+</runstats>
+</nmaprun>

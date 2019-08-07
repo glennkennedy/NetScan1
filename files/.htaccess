@@ -1,0 +1,4 @@
+<Files *.xml>
+ForceType application/xml
+Header set Content-Disposition attachment
+</Files>
