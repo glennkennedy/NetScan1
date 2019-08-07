@@ -39,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Want to do a free scan on your website for secuiry information?</h1>
+          <h1 class="mb-5">Want to do a free scan on your website for security information?</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
 <form action="/login/signup.php" method="get">
